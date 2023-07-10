@@ -1,27 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400&family=Jost:wght@200;300;400;500;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+	font-family: 'Montserrat', sans-serif;
+}
+
+#swiper .swiper-button-prev::after {
+	font-size: 30px;
+	color: rgba(235, 209, 161, 0.774);
+}
+
+#swiper .swiper-button-next::after {
+	font-size: 30px;
+	color: rgba(235, 209, 161, 0.774);
+}
+
+#swiper .swiper-pagination-bullet {
+	background: rgba(235, 209, 161, 0.774);
+}
+
+#swiper_two .swiper-button-prev::after {
+	font-size: 20px;
+	background-color: rgba(128, 128, 128, 0.363);
+	margin: 20px;
+	padding: 10px 15px;
+	border-radius: 100%;
+	color: rgba(53, 53, 53, 0.774);
+}
+
+#swiper_two .swiper-button-prev {
+	left: 60px;
+}
+#swiper_two .swiper-button-next::after {
+	font-size: 20px;
+	background-color: rgba(128, 128, 128, 0.363);
+	margin: 20px;
+	padding: 10px 15px;
+	border-radius: 100%;
+	color: rgba(53, 53, 53, 0.774);
+}
+
+#swiper_two .swiper-pagination-bullet {
+	background: rgba(143, 106, 39, 0.979);
+}
+
+#swiper_two .swiper-button-next {
+	right: 60px;
+}
+
+@media screen and (max-width: 768px) {
+	#swiper_two .swiper-button-prev::after {
+		display: none;
+	}
+
+	#swiper_two .swiper-button-next::after {
+		display: none;
+	}
 }
