@@ -1,11 +1,11 @@
 import { SOBRE_MI, CLIENTES } from '../contents/contenido';
-import Carousel from './components/Carousel';
-import Clientes from './components/Clientes';
-import Contenido from './components/Contenido';
-import Metodos from './components/Metodos';
-import Packs from './components/Packs';
-import Productos from './components/Productos';
-import Layout from './layout/Layout';
+import Carousel from '../components/Carousel';
+import Clientes from '../components/Clientes';
+import Contenido from '../components/Contenido';
+import Metodos from '../components/Metodos';
+import Packs from '../components/Packs';
+import Productos from '../components/Productos';
+import Layout from '../layout/Layout';
 
 export default function Home() {
 	return (

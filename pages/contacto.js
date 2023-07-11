@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { Box, Container, Text } from '@chakra-ui/react';
 import emailjs from '@emailjs/browser';
-import Layout from './layout/Layout';
+import Layout from '../layout/Layout';
 
 const Contacto = () => {
 	const [nombre, setNombre] = useState('');

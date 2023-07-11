@@ -1,7 +1,7 @@
 import React from 'react';
-import Layout from '../layout/Layout';
-import ProductoContainer from '../components/ui/ProductoContainer';
-import ProductoContainerPackage from '../components/ui/ProductoContainerPackage';
+import Layout from '../../layout/Layout';
+import ProductoContainer from '../../components/ui/ProductoContainer';
+import ProductoContainerPackage from '../../components/ui/ProductoContainerPackage';
 import { PRODUCTOS } from '../../contents/productos';
 import { Container } from '@chakra-ui/react';
 import { useRouter } from 'next/router';

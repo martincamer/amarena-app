@@ -11,10 +11,10 @@ import 'swiper/css/pagination';
 import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 
 //imagenes
-import uno from '../../public/img/slider_clientes/uno.png';
-import dos from '../../public/img/slider_clientes/dos.png';
-import tres from '../../public/img/slider_clientes/tres.png';
-import cuatro from '../../public/img/slider_clientes/cuatro.png';
+import uno from '../public/img/slider_clientes/uno.png';
+import dos from '../public/img/slider_clientes/dos.png';
+import tres from '../public/img/slider_clientes/tres.png';
+import cuatro from '../public/img/slider_clientes/cuatro.png';
 
 function Clientes() {
 	return (

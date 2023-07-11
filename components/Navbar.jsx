@@ -1,12 +1,11 @@
-'use client';
 import { useContext } from 'react';
-import { NAVEGACION } from '../../contents/contenido';
+import { NAVEGACION } from '../contents/contenido';
 import { Box, Container, Link, Text } from '@chakra-ui/react';
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import CartContext from '../context/CartContext';
 import Image from 'next/image';
-import logo from '../../public/img/logo.jpeg';
+import logo from '../public/img/logo.jpeg';
 
 function Navbar() {
 	const { handleClick, click } = useContext(CartContext);

@@ -9,7 +9,7 @@ import 'swiper/css/pagination';
 
 // import required modules
 import { Zoom, Navigation, Pagination, Autoplay } from 'swiper/modules';
-import carousel from '../../contents/carousel';
+import carousel from '../contents/carousel';
 import Image from 'next/image';
 
 function Carousel() {

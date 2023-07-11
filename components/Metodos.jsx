@@ -1,7 +1,6 @@
 import { Box, Container, Text } from '@chakra-ui/react';
 import { FaWhatsapp } from 'react-icons/fa';
 import { AiFillBank, AiOutlineMail } from 'react-icons/ai';
-import React from 'react';
 
 function Metodos() {
 	return (
