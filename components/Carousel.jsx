@@ -31,8 +31,8 @@ function Carousel() {
 			}}
 			className="w-full mx-auto bg-gray-100/30"
 		>
-			{carousel.map(car => (
-				<SwiperSlide key={car}>
+			{carousel.map((car, index) => (
+				<SwiperSlide key={index}>
 					<Image
 						className="w-[1400px] mx-auto max-md:w-full max-md:h-[100%] md:p-10"
 						src={car.imagen}

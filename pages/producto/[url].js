@@ -1,4 +1,3 @@
-import React from 'react';
 import Layout from '../../layout/Layout';
 import ProductoContainer from '../../components/ui/ProductoContainer';
 import ProductoContainerPackage from '../../components/ui/ProductoContainerPackage';

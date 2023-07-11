@@ -24,6 +24,7 @@ function Productos() {
 					rounded-lg hover:scale-102 max-md:hover:scale-100 max-md:hover:translate-x-1 hover:translate-x-1 transiton-all duration-300
 					 space-y-3"
 							href={`/producto/${item.url}`}
+							key={item.id}
 						>
 							<Box>
 								<Image

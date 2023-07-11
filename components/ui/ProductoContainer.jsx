@@ -4,8 +4,7 @@ import ReactWhatsapp from 'react-whatsapp';
 import Image from 'next/image';
 
 function ProductoContainer({ producto }) {
-	const { descripcion, imagen, nombre, precio, descripcion_lista, lista_item } =
-		producto;
+	const { imagen, nombre, precio, descripcion_lista, lista_item } = producto;
 	return (
 		<Box className="flex items-center gap-28 max-md:flex-col-reverse max-md:gap-10">
 			<Box className="flex-1 space-y-6">

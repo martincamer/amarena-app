@@ -20,6 +20,7 @@ const Packs = () => {
 			<Box className="grid grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 gap-10 max-md:gap-4">
 				{PRODUCTOS.package.map(pack => (
 					<Link
+						key={pack.id}
 						href={`/producto/${pack.url}`}
 						className="cursor-pointer"
 					>
