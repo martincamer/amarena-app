@@ -1,4 +1,4 @@
-import clientes from './contents/ContenidoData';
+import ContenidoData from './contents/ContenidoData';
 import Carousel from './components/Carousel';
 import Clientes from './components/Clientes';
 import Contenido from './components/Contenido';
@@ -11,7 +11,7 @@ export default function Home() {
 	return (
 		<Layout pagina={'Inicio'}>
 			<Carousel />
-			{clientes.sobre_mi.map(contenido => (
+			{ContenidoData.sobre_mi.map(contenido => (
 				<Contenido
 					key={contenido.id}
 					contenido={contenido.titulo}
@@ -20,7 +20,7 @@ export default function Home() {
 			))}
 			<Packs />
 			<Productos />
-			{clientes.clientes.map(contenido => (
+			{ContenidoData.clientes.map(contenido => (
 				<Contenido
 					key={contenido.id}
 					contenido={contenido.titulo}

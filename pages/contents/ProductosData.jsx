@@ -11,7 +11,7 @@ import producto_tres from '../../public/img/productos/producto/4.png';
 import producto_cuatro from '../../public/img/productos/producto/3.png';
 import producto_cinco from '../../public/img/productos/producto/2.png';
 
-const PRODUCTOS = {
+const ProductosData = {
 	package: [
 		//uno
 		{
@@ -259,4 +259,4 @@ const PRODUCTOS = {
 	],
 };
 
-export default PRODUCTOS;
+export default ProductosData;

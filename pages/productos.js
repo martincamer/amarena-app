@@ -1,6 +1,6 @@
 import { Box, Container, Text } from '@chakra-ui/react';
 import Layout from './layout/Layout';
-import PRODUCTOS from './contents/ProductosData';
+import ProductosData from './contents/ProductosData';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -18,7 +18,7 @@ function Productos() {
 					</h1>
 				</Box>
 				<Box className="grid grid-cols-5 max-lg:grid-cols-4 max-md:grid-cols-2 gap-6 max-md:gap-4">
-					{PRODUCTOS.package.map(item => (
+					{ProductosData.package.map(item => (
 						<Link
 							className="
 					rounded-lg hover:scale-102 max-md:hover:scale-100 max-md:hover:translate-x-1 hover:translate-x-1 transiton-all duration-300
@@ -49,7 +49,7 @@ function Productos() {
 							</Box>
 						</Link>
 					))}
-					{PRODUCTOS.productos.map(item => (
+					{ProductosData.productos.map(item => (
 						<Link
 							className="
 					rounded-lg hover:scale-102 max-md:hover:scale-100 max-md:hover:translate-x-1 hover:translate-x-1 transiton-all duration-300
