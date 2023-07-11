@@ -2,8 +2,8 @@
 import { useContext } from 'react';
 import { Box, Container, Link, Text } from '@chakra-ui/react';
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
-import clientes from '../contents/Contenido';
 import { motion } from 'framer-motion';
+import clientes from '../contents/ContenidoData';
 import CartContext from '../context/CartContext';
 import Image from 'next/image';
 import logo from '../../public/img/logo.jpeg';

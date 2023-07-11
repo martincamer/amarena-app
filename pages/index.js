@@ -1,4 +1,4 @@
-import clientes from './contents/Contenido';
+import clientes from './contents/ContenidoData';
 import Carousel from './components/Carousel';
 import Clientes from './components/Clientes';
 import Contenido from './components/Contenido';

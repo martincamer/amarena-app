@@ -4,7 +4,7 @@ import ProductoContainer from '../components/ui/ProductoContainer';
 import ProductoContainerPackage from '../components/ui/ProductoContainerPackage';
 import { Container } from '@chakra-ui/react';
 import { useRouter } from 'next/router';
-import PRODUCTOS from '../contents/Productos';
+import PRODUCTOS from '../contents/ProductosData';
 
 function Producto() {
 	const params = useRouter();
