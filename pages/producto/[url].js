@@ -21,21 +21,21 @@ function Producto() {
 				maxW={1220}
 				className="mx-auto py-[100px] max-md:px-10 max-md:py-[80px] border-b-[1px] border-gray-400"
 			>
-				{PRODUCTOS.productos.map((producto, index) => (
+				{PRODUCTOS.productos.map(producto => (
 					<>
 						{params.query.url == producto.url && (
 							<ProductoContainer
-								key={index}
+								key={producto.id}
 								producto={producto}
 							/>
 						)}
 					</>
 				))}
-				{PRODUCTOS.package.map((producto, index) => (
+				{PRODUCTOS.package.map(producto => (
 					<>
 						{params.query.url == producto.url && (
 							<ProductoContainerPackage
-								key={index}
+								key={producto.id}
 								producto={producto}
 							/>
 						)}

@@ -4,12 +4,15 @@ import ReactWhatsapp from 'react-whatsapp';
 import Image from 'next/image';
 
 function ProductoContainerPackage({ producto }) {
-	const { imagen, descripcion, precio, nombre, lista, comentario_dos } =
+	const { imagen, descripcion, precio, nombre, lista, comentario_dos, id } =
 		producto;
 
 	return (
 		<Box className="flex items-center gap-28 max-md:flex-col-reverse max-md:gap-10">
-			<Box className="flex-1 space-y-10">
+			<Box
+				key={id}
+				className="flex-1 space-y-10"
+			>
 				<Image
 					className="w-full h-full"
 					src={imagen}
