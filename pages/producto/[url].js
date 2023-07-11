@@ -1,9 +1,10 @@
 import Layout from '../../layout/Layout';
-import ProductoContainer from '../../components/ui/ProductoContainer';
-import ProductoContainerPackage from '../../components/ui/ProductoContainerPackage';
 import { PRODUCTOS } from '../../contents/productos';
-import { Container } from '@chakra-ui/react';
+import { Container, Box, Text } from '@chakra-ui/react';
 import { useRouter } from 'next/router';
+import Enlace from '../../components/ui/Button';
+import ReactWhatsapp from 'react-whatsapp';
+import Image from 'next/image';
 
 function Producto() {
 	const params = useRouter();
@@ -24,20 +25,124 @@ function Producto() {
 				{PRODUCTOS.productos.map(producto => (
 					<>
 						{params.query.url == producto.url && (
-							<ProductoContainer
-								key={producto}
-								producto={producto}
-							/>
+							<Box className="flex items-center gap-28 max-md:flex-col-reverse max-md:gap-10">
+								<Box className="flex-1 space-y-6">
+									<Image
+										className="w-full h-full"
+										src={producto.imagen}
+										alt="imagen"
+									/>
+
+									<Box>
+										<Text className="text-[300] text-base text-five">
+											{producto.descripcion_lista.item}
+										</Text>
+									</Box>
+
+									<Box className="space-y-2">
+										{producto.lista_item.map(list => (
+											<li
+												key={list}
+												className="capitalize text-[15px] text-fourty"
+											>
+												{list.item}.
+											</li>
+										))}
+									</Box>
+								</Box>
+								<Box className="flex-1 space-y-12 max-md:space-y-8 max-md:text-center">
+									<Text className="text-5xl uppercase text-five max-md:text-2xl">
+										{producto.nombre}
+									</Text>
+									<Text className="text-3xl text-terciary font-bold max-md:text-lg">
+										PRECIO: $ {producto.precio}
+									</Text>
+									<Box>
+										<Enlace
+											clase={
+												'bg-five py-4 px-5 text-xl text-primary max-md:text-sm'
+											}
+										>
+											<ReactWhatsapp
+												number="3462550457"
+												message={`¡Hola! Estuve en la pagina y deseo consultar por el servicio de ${producto.nombre.toLocaleUpperCase()} ($${
+													producto.precio
+												}) 
+											Gracias.`}
+											>
+												CONSULTAR AHORA
+											</ReactWhatsapp>
+										</Enlace>
+									</Box>
+								</Box>
+							</Box>
 						)}
 					</>
 				))}
 				{PRODUCTOS.package.map(producto => (
 					<>
 						{params.query.url == producto.url && (
-							<ProductoContainerPackage
-								key={producto}
-								producto={producto}
-							/>
+							<Box className="flex items-center gap-28 max-md:flex-col-reverse max-md:gap-10">
+								<Box className="flex-1 space-y-10">
+									<Image
+										className="w-full h-full"
+										src={producto.imagen}
+										alt="imagen"
+									/>
+									<Box>
+										<Box className="space-y-4">
+											{producto.descripcion.map(desc => (
+												<Box>
+													<Text className="text-[300] text-base text-five">
+														{producto.desc.comentario}
+													</Text>
+												</Box>
+											))}
+
+											<Box className="space-y-2">
+												{producto.lista.map(list => (
+													<li
+														key={list}
+														className="capitalize text-[15px] text-fourty"
+													>
+														{list.titulo}.
+													</li>
+												))}
+											</Box>
+											<Box>
+												<Text className="text-[300] text-base text-five">
+													{producto.comentario_dos}
+												</Text>
+											</Box>
+										</Box>
+									</Box>
+								</Box>
+								<Box className="flex-1 space-y-12 max-md:space-y-8 max-md:text-center">
+									<Text className="text-5xl uppercase text-five max-md:text-2xl">
+										{producto.nombre}
+									</Text>
+									<Text className="text-3xl text-terciary font-bold max-md:text-lg">
+										PRECIO: $ {precio}
+									</Text>
+									<Box>
+										<Enlace
+											clase={
+												'bg-five py-4 px-5 text-xl text-primary max-md:text-sm'
+											}
+										>
+											<ReactWhatsapp
+												number="3462550457"
+												message={`¡Hola! Estuve en la pagina y deseo consultar por el servicio de ${producto.nombre.toLocaleUpperCase()} ($${
+													producto.precio
+												}) 
+									Gracias.`}
+											>
+												CONSULTAR AHORA
+											</ReactWhatsapp>
+										</Enlace>
+									</Box>
+								</Box>
+							</Box>
 						)}
 					</>
 				))}
