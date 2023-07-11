@@ -25,7 +25,10 @@ function Producto() {
 				{PRODUCTOS.productos.map(producto => (
 					<>
 						{params.query.url == producto.url && (
-							<Box className="flex items-center gap-28 max-md:flex-col-reverse max-md:gap-10">
+							<Box
+								key={producto.id}
+								className="flex items-center gap-28 max-md:flex-col-reverse max-md:gap-10"
+							>
 								<Box className="flex-1 space-y-6">
 									<Image
 										className="w-full h-full"
@@ -82,7 +85,10 @@ function Producto() {
 				{PRODUCTOS.package.map(producto => (
 					<>
 						{params.query.url == producto.url && (
-							<Box className="flex items-center gap-28 max-md:flex-col-reverse max-md:gap-10">
+							<Box
+								key={producto.id}
+								className="flex items-center gap-28 max-md:flex-col-reverse max-md:gap-10"
+							>
 								<Box className="flex-1 space-y-10">
 									<Image
 										className="w-full h-full"
