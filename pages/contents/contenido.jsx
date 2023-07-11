@@ -30,4 +30,4 @@ const navegacion = [
 	},
 ];
 
-export { sobre_mi, clientes, navegacion };
+export default { sobre_mi, clientes, navegacion };

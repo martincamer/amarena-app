@@ -1,4 +1,4 @@
-import { sobre_mi, clientes } from './contents/contenido';
+import clientes from './contents/Contenido';
 import Carousel from './components/Carousel';
 import Clientes from './components/Clientes';
 import Contenido from './components/Contenido';
@@ -11,7 +11,7 @@ export default function Home() {
 	return (
 		<Layout pagina={'Inicio'}>
 			<Carousel />
-			{sobre_mi.map(contenido => (
+			{clientes.sobre_mi.map(contenido => (
 				<Contenido
 					key={contenido.id}
 					contenido={contenido.titulo}
@@ -20,7 +20,7 @@ export default function Home() {
 			))}
 			<Packs />
 			<Productos />
-			{clientes.map(contenido => (
+			{clientes.clientes.map(contenido => (
 				<Contenido
 					key={contenido.id}
 					contenido={contenido.titulo}
