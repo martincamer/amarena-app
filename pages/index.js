@@ -1,4 +1,4 @@
-import { clientes, sobre_mi } from './contents/contenido';
+import { sobre_mi, clientes } from './contents/contenido';
 import Carousel from './components/Carousel';
 import Clientes from './components/Clientes';
 import Contenido from './components/Contenido';

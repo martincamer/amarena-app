@@ -1,5 +1,5 @@
-import { Box, Button, Container, Text } from '@chakra-ui/react';
-import { Enlace } from './ui/Button';
+import { Box, Container, Text } from '@chakra-ui/react';
+import Enlace from './ui/Button';
 
 const Contenido = ({ contenido, enlace }) => {
 	return (

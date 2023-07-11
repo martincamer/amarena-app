@@ -1,5 +1,5 @@
 import { Box, Container, Text } from '@chakra-ui/react';
-import { PRODUCTOS } from '../contents/productos';
+import PRODUCTOS from '../contents/productos';
 import Image from 'next/image';
 import Link from 'next/link';
 

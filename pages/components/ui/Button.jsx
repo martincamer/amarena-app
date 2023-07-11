@@ -1,7 +1,7 @@
 import { Button } from '@chakra-ui/react';
 import Link from 'next/link';
 
-export const Enlace = ({ children, clase }) => {
+const Enlace = ({ children, clase }) => {
 	return (
 		<Button className={`${clase} uppercase font-bold`}>
 			<Link
@@ -13,3 +13,5 @@ export const Enlace = ({ children, clase }) => {
 		</Button>
 	);
 };
+
+export default Enlace;

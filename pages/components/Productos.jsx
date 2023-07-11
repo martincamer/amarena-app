@@ -1,7 +1,7 @@
-import { Box, Card, Container, Text } from '@chakra-ui/react';
-import { PRODUCTOS } from '../contents/productos';
+import { Box, Container, Text } from '@chakra-ui/react';
+import PRODUCTOS from '../contents/productos';
 import CardProducto from './ui/CardProducto';
-import { Enlace } from './ui/Button';
+import Enlace from './ui/Button';
 
 function Productos() {
 	return (

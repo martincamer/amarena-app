@@ -1,6 +1,6 @@
 import { Box, Container, Text } from '@chakra-ui/react';
 import Layout from './layout/Layout';
-import { PRODUCTOS } from './contents/productos';
+import PRODUCTOS from './contents/productos';
 import Link from 'next/link';
 import Image from 'next/image';
 

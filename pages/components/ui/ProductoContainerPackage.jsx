@@ -1,5 +1,5 @@
 import { Box, Text } from '@chakra-ui/react';
-import { Enlace } from './Button';
+import Enlace from './Button';
 import ReactWhatsapp from 'react-whatsapp';
 import Image from 'next/image';
 

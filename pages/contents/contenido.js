@@ -1,4 +1,4 @@
-export const sobre_mi = [
+const sobre_mi = [
 	{
 		id: '4841aa80-409e-4dd6-9c76-44e87c80c6d3 ',
 		titulo:
@@ -7,7 +7,7 @@ export const sobre_mi = [
 	},
 ];
 
-export const clientes = [
+const clientes = [
 	{
 		id: '4841aa80-409e-4dd6-9c76-44e87c80c6d3 ',
 		titulo: 'Clientes que me elijieron!',
@@ -15,7 +15,7 @@ export const clientes = [
 	},
 ];
 
-export const navegacion = [
+const navegacion = [
 	{
 		titulo: 'inicio',
 		url: '/',
@@ -29,3 +29,5 @@ export const navegacion = [
 		url: '/contacto',
 	},
 ];
+
+export { sobre_mi, clientes, navegacion };
