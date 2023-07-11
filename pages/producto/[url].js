@@ -25,7 +25,7 @@ function Producto() {
 					<>
 						{params.query.url == producto.url && (
 							<ProductoContainer
-								key={producto.id}
+								key={producto}
 								producto={producto}
 							/>
 						)}
@@ -35,7 +35,7 @@ function Producto() {
 					<>
 						{params.query.url == producto.url && (
 							<ProductoContainerPackage
-								key={producto.id}
+								key={producto}
 								producto={producto}
 							/>
 						)}

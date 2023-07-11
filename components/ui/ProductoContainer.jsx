@@ -4,8 +4,7 @@ import ReactWhatsapp from 'react-whatsapp';
 import Image from 'next/image';
 
 function ProductoContainer({ producto }) {
-	const { imagen, nombre, precio, descripcion_lista, lista_item, id } =
-		producto;
+	const { imagen, nombre, precio, descripcion_lista, lista_item } = producto;
 	return (
 		<Box
 			key={id}
