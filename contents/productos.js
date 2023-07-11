@@ -1,17 +1,17 @@
-import pack_uno from '../../public/img/productos/pack/7.png';
-import pack_dos from '../../public/img/productos/pack/8.png';
-import pack_tres from '../../public/img/productos/pack/9.png';
-import pack_cuatro from '../../public/img/productos/pack/10.png';
-import pack_cinco from '../../public/img/productos/pack/11.png';
-import pack_seis from '../../public/img/productos/pack/12.png';
+import pack_uno from '../public/img/productos/pack/7.png';
+import pack_dos from '../public/img/productos/pack/8.png';
+import pack_tres from '../public/img/productos/pack/9.png';
+import pack_cuatro from '../public/img/productos/pack/10.png';
+import pack_cinco from '../public/img/productos/pack/11.png';
+import pack_seis from '../public/img/productos/pack/12.png';
 //productos
-import producto_uno from '../../public/img/productos/producto/5.png';
-import producto_dos from '../../public/img/productos/producto/6.png';
-import producto_tres from '../../public/img/productos/producto/4.png';
-import producto_cuatro from '../../public/img/productos/producto/3.png';
-import producto_cinco from '../../public/img/productos/producto/2.png';
+import producto_uno from '../public/img/productos/producto/5.png';
+import producto_dos from '../public/img/productos/producto/6.png';
+import producto_tres from '../public/img/productos/producto/4.png';
+import producto_cuatro from '../public/img/productos/producto/3.png';
+import producto_cinco from '../public/img/productos/producto/2.png';
 
-const ProductosData = {
+export const PRODUCTOS = {
 	package: [
 		//uno
 		{
@@ -258,5 +258,3 @@ const ProductosData = {
 		},
 	],
 };
-
-export default ProductosData;

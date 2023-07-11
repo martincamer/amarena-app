@@ -1,9 +1,9 @@
 'use client';
 import { useContext } from 'react';
+import { NAVEGACION } from '../../contents/contenido';
 import { Box, Container, Link, Text } from '@chakra-ui/react';
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import ContenidoData from '../contents/ContenidoData';
 import CartContext from '../context/CartContext';
 import Image from 'next/image';
 import logo from '../../public/img/logo.jpeg';
@@ -31,7 +31,7 @@ function Navbar() {
 						/>
 					</Link>
 					<Box className="flex gap-16 max-md:hidden">
-						{ContenidoData.navegacion.map(link => (
+						{NAVEGACION.map(link => (
 							<Link
 								className="uppercase text-gray-500 font-bold hover:text-gray-900 transition-all ease-out"
 								key={link.titulo}

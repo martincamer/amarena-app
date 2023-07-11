@@ -1,4 +1,4 @@
-const sobre_mi = [
+export const SOBRE_MI = [
 	{
 		id: '4841aa80-409e-4dd6-9c76-44e87c80c6d3 ',
 		titulo:
@@ -7,7 +7,7 @@ const sobre_mi = [
 	},
 ];
 
-const clientes = [
+export const CLIENTES = [
 	{
 		id: '4841aa80-409e-4dd6-9c76-44e87c80c6d3 ',
 		titulo: 'Clientes que me elijieron!',
@@ -15,7 +15,7 @@ const clientes = [
 	},
 ];
 
-const navegacion = [
+export const NAVEGACION = [
 	{
 		titulo: 'inicio',
 		url: '/',
@@ -29,5 +29,3 @@ const navegacion = [
 		url: '/contacto',
 	},
 ];
-
-export default { sobre_mi, clientes, navegacion };

@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../layout/Layout';
 import ProductoContainer from '../components/ui/ProductoContainer';
 import ProductoContainerPackage from '../components/ui/ProductoContainerPackage';
-import ProductosData from '../contents/ProductosData';
+import { PRODUCTOS } from '../../contents/productos';
 import { Container } from '@chakra-ui/react';
 import { useRouter } from 'next/router';
 
@@ -22,7 +22,7 @@ function Producto() {
 				maxW={1220}
 				className="mx-auto py-[100px] max-md:px-10 max-md:py-[80px] border-b-[1px] border-gray-400"
 			>
-				{ProductosData.productos.map(producto => (
+				{PRODUCTOS.productos.map(producto => (
 					<>
 						{params.query.url == producto.url && (
 							<ProductoContainer
@@ -32,7 +32,7 @@ function Producto() {
 						)}
 					</>
 				))}
-				{ProductosData.package.map(producto => (
+				{PRODUCTOS.package.map(producto => (
 					<>
 						{params.query.url == producto.url && (
 							<ProductoContainerPackage
