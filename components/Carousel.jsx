@@ -36,6 +36,7 @@ function Carousel() {
 					<Image
 						className="w-[1400px] mx-auto max-md:w-full max-md:h-[100%] md:p-10"
 						src={car.imagen}
+						alt="imagen"
 					/>
 				</SwiperSlide>
 			))}

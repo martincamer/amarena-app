@@ -2,10 +2,11 @@ import { Box, Link, Text } from '@chakra-ui/react';
 import Image from 'next/image';
 
 function CardProducto({ producto }) {
-	const { url, precio, nombre, imagen } = producto;
+	const { url, precio, nombre, imagen, id } = producto;
 	console.log(producto);
 	return (
 		<Link
+			key={id}
 			className="
 		rounded-lg hover:scale-105 max-md:hover:scale-100 max-md:hover:translate-x-1 hover:translate-x-2 transiton-all duration-300
 		 space-y-3"

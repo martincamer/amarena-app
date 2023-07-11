@@ -55,6 +55,7 @@ function Clientes() {
 						<Image
 							className="max-md:w-[200px] w-full h-full z-0"
 							src={card.imagen}
+							alt="imagen"
 						/>
 					</SwiperSlide>
 				))}

@@ -27,6 +27,7 @@ const Packs = () => {
 						<Image
 							className="rounded-lg hover:scale-105 max-md:hover:scale-100 max-md:hover:translate-x-1 hover:translate-x-4 transiton-all duration-300 hover:shadow-md hover:shadow-black/20"
 							src={pack.imagen}
+							alt="imagen"
 						/>
 					</Link>
 				))}
