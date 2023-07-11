@@ -128,7 +128,7 @@ function Producto() {
 										{producto.nombre}
 									</Text>
 									<Text className="text-3xl text-terciary font-bold max-md:text-lg">
-										PRECIO: $ {precio}
+										PRECIO: $ {producto.precio}
 									</Text>
 									<Box>
 										<Enlace
