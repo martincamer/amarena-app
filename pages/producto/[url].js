@@ -22,18 +22,24 @@ function Producto() {
 				className="mx-auto py-[100px] max-md:px-10 max-md:py-[80px] border-b-[1px] border-gray-400"
 			>
 				{PRODUCTOS.productos.map(producto => (
-					<div key={producto.id}>
+					<>
 						{params.query.url == producto.url && (
-							<ProductoContainer producto={producto} />
+							<ProductoContainer
+								key={producto.id}
+								producto={producto}
+							/>
 						)}
-					</div>
+					</>
 				))}
 				{PRODUCTOS.package.map(producto => (
-					<div key={producto.id}>
+					<>
 						{params.query.url == producto.url && (
-							<ProductoContainerPackage producto={producto} />
+							<ProductoContainerPackage
+								key={producto.id}
+								producto={producto}
+							/>
 						)}
-					</div>
+					</>
 				))}
 			</Container>
 		</Layout>
