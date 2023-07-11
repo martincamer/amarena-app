@@ -195,7 +195,6 @@ export const PRODUCTOS = {
 			imagen: producto_dos,
 			precio: '50.000',
 
-			url: 'tienda-online',
 			descripcion_lista: {
 				item: 'Una tienda online es un sitio web ecommerce diseñado especialmente para vender productos/servicios mediante forma online.',
 			},
@@ -207,6 +206,7 @@ export const PRODUCTOS = {
 					item: 'Posee carrito de compras, envio, metodos de pago, login y registro, panel administrador',
 				},
 			],
+			url: 'tienda-online',
 		},
 		{
 			id: 'e308e42a-5d42-4e14-99b7-be04a5461cc1',
@@ -214,7 +214,6 @@ export const PRODUCTOS = {
 			imagen: producto_cuatro,
 			precio: '10.000',
 
-			url: 'invitaicones-digitales',
 			descripcion_lista: {
 				item: 'Diseñamos tarjetas/invitaciones de todo tipo totalmente personalizadas. Son digitales y se envian en formatos listos aptos para impresión como para enviar por todas tus redes',
 			},
@@ -223,13 +222,13 @@ export const PRODUCTOS = {
 					item: 'Cumpleaños, casamientos, bautismos, comuniones, beyby showeer y miles de opciones más',
 				},
 			],
+			url: 'invitaicones-digitales',
 		},
 		{
 			id: 'e308e42a-5d42-4e14-99b7-be04a5461cc1',
 			nombre: 'branding',
 			imagen: producto_tres,
 			precio: '10.000',
-			url: 'branding',
 			descripcion_lista: {
 				item: 'Te ayudo a crear una marca fuerte y profesional partiendo de un concepto de la misma, con una identidad propia que la identifique y diferencie del resto',
 			},
@@ -238,6 +237,7 @@ export const PRODUCTOS = {
 					item: 'Diseño de elementos visuales, como el logotipo, los colores y la tipografía, etc.',
 				},
 			],
+			url: 'branding',
 		},
 		{
 			id: '6ed3b743-6e47-4c65-861f-f13c88ffc982',
@@ -246,7 +246,6 @@ export const PRODUCTOS = {
 			precio: '10.000',
 			descripcion:
 				'Avatar para usar en tu foto de perfil o como logo de tu emprendimiento! Mandame tu foto a Lbruno.designn@gmail.com y listo ♥',
-			url: 'curriculum-vitae',
 			descripcion_lista: {
 				item: 'Te ofrecemos un servicio de confección y diseño de CV orientado a tu perfil profesional, el objetivo de la búsqueda y palabras claves',
 			},
@@ -255,6 +254,7 @@ export const PRODUCTOS = {
 					item: '¡Mas de 60 plantillas personalizables!',
 				},
 			],
+			url: 'curriculum-vitae',
 		},
 	],
 };
