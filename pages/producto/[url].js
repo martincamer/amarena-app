@@ -98,9 +98,9 @@ function Producto() {
 									<Box>
 										<Box className="space-y-4">
 											{producto.descripcion.map(desc => (
-												<Box>
+												<Box key={desc}>
 													<Text className="text-[300] text-base text-five">
-														{producto.desc.comentario}
+														{desc.comentario}
 													</Text>
 												</Box>
 											))}
