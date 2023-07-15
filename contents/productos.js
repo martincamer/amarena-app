@@ -46,7 +46,7 @@ export const PRODUCTOS = {
 			id: 'dbe8fe48-927c-4e29-b106-430856ce1e72',
 			nombre: 'pack gestion de redes medio',
 			imagen: pack_dos,
-			precio: '10.000',
+			precio: '15.000',
 			descripcion: [
 				{
 					comentario:
@@ -67,7 +67,7 @@ export const PRODUCTOS = {
 			id: '415ba30c-d4c0-4922-99a8-7023ced12d3e ',
 			nombre: 'pack gestion de redes full',
 			imagen: pack_tres,
-			precio: '10.000',
+			precio: '20.000',
 			descripcion: [
 				{
 					comentario:
@@ -117,7 +117,7 @@ export const PRODUCTOS = {
 			id: 'ba60633a-e496-48f9-9fc9-d2a6437de088',
 			nombre: 'pack despegando',
 			imagen: pack_cinco,
-			precio: '10.000',
+			precio: '15.000',
 			descripcion: [
 				{
 					comentario:
@@ -145,7 +145,7 @@ export const PRODUCTOS = {
 			id: '7ffe9e4a-fdbf-4364-b8c4-ca5dbadabfc5',
 			nombre: 'crea tu propio pack',
 			imagen: pack_seis,
-			precio: '10.000',
+			precio: '10.000 - 50.000',
 			descripcion: [
 				{
 					comentario:
@@ -172,7 +172,7 @@ export const PRODUCTOS = {
 			id: '0b8d2265-e16b-4a12-8031-23a4b4897b16',
 			nombre: 'landing page',
 			imagen: producto_uno,
-			precio: '20.000',
+			precio: '30.000',
 			url: 'landing-page',
 			descripcion_lista: {
 				item: 'Se trata de una sola página, que contiene opciones simples mostrando el contenido de forma concreta ya que su finalidad es lograr conversiones.',
@@ -212,7 +212,7 @@ export const PRODUCTOS = {
 			id: 'e308e42a-5d42-4e14-99b7-be04a5461cc1',
 			nombre: 'invitaciones digitales',
 			imagen: producto_cuatro,
-			precio: '10.000',
+			precio: '1.500',
 
 			descripcion_lista: {
 				item: 'Diseñamos tarjetas/invitaciones de todo tipo totalmente personalizadas. Son digitales y se envian en formatos listos aptos para impresión como para enviar por todas tus redes',
@@ -243,7 +243,7 @@ export const PRODUCTOS = {
 			id: '6ed3b743-6e47-4c65-861f-f13c88ffc982',
 			nombre: 'curriculum vitae',
 			imagen: producto_cinco,
-			precio: '10.000',
+			precio: '1.600',
 			descripcion:
 				'Avatar para usar en tu foto de perfil o como logo de tu emprendimiento! Mandame tu foto a Lbruno.designn@gmail.com y listo ♥',
 			descripcion_lista: {
