@@ -43,8 +43,15 @@ function Navbar() {
 					</Box>
 					<Box className="flex gap-2 max-md:hidden">
 						{/* redes sociales  */}
-						<FaInstagram className="text-[40px] text-primary bg-gray-700/60 p-2 rounded-[50%] cursor-pointer hover:bg-gray-700 hover:scale-105 transition-all ease-in-out duration-300" />
-						<FaWhatsapp className="text-[40px] text-primary bg-gray-700/60 p-2 rounded-[50%] cursor-pointer hover:bg-gray-700 hover:scale-105 transition-all ease-in-out duration-300" />
+						<Link href="https://www.instagram.com/amarena.agency/">
+							<FaInstagram className="text-[40px] text-primary bg-gray-700/60 p-2 rounded-[50%] cursor-pointer hover:bg-gray-700 hover:scale-105 transition-all ease-in-out duration-300" />
+						</Link>
+						<ReactWhatsapp
+							number="3462550457"
+							message={`¡Hola! tengo una consulta con el servicio de..`}
+						>
+							<FaWhatsapp className="text-[40px] text-primary bg-gray-700/60 p-2 rounded-[50%] cursor-pointer hover:bg-gray-700 hover:scale-105 transition-all ease-in-out duration-300" />
+						</ReactWhatsapp>
 					</Box>
 
 					<div className="hidden max-md:block">
@@ -71,7 +78,7 @@ function Navbar() {
 						className={`min-w-[84.5vw] min-h-[90.6vw]  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-five/90 z-10 p-10 transition-all duration-500 ease-out backdrop-blur-md  rounded-lg space-y-10 shadow-lg shadow-black/40`}
 					>
 						<Box className="flex flex-col space-y-10">
-							{navegacion.map(link => (
+							{NAVEGACION.map(link => (
 								<Link
 									className="uppercase text-gray-900 font-bold hover:text-gray-900 transition-all ease-out text-2xl"
 									key={link.titulo}
