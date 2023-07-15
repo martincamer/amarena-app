@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import CartContext from '../context/CartContext';
 import Image from 'next/image';
 import logo from '../public/img/logo.jpeg';
+import ReactWhatsapp from 'react-whatsapp';
 
 function Navbar() {
 	const { handleClick, click } = useContext(CartContext);
@@ -83,8 +84,15 @@ function Navbar() {
 
 						<Box className="flex gap-2">
 							{/* redes sociales  */}
-							<FaInstagram className="text-[50px] text-five bg-primary p-2 rounded-[50%] cursor-pointer hover:bg-gray-700 hover:scale-105 transition-all ease-in-out duration-300" />
-							<FaWhatsapp className="text-[50px] text-five bg-primary p-2 rounded-[50%] cursor-pointer hover:bg-gray-700 hover:scale-105 transition-all ease-in-out duration-300" />
+							<Link href="https://www.instagram.com/amarena.agency/">
+								<FaInstagram className="text-[50px] text-five bg-primary p-2 rounded-[50%] cursor-pointer hover:bg-gray-700 hover:scale-105 transition-all ease-in-out duration-300" />
+							</Link>
+							<ReactWhatsapp
+								number="3462550457"
+								message={`¡Hola! tengo una consulta con el servicio de..`}
+							>
+								<FaWhatsapp className="text-[50px] text-five bg-primary p-2 rounded-[50%] cursor-pointer hover:bg-gray-700 hover:scale-105 transition-all ease-in-out duration-300" />
+							</ReactWhatsapp>
 						</Box>
 					</Box>
 				)}

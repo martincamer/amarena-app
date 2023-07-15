@@ -27,7 +27,7 @@ function Producto() {
 						{params.query.url == producto.url && (
 							<Box
 								key={producto.id}
-								className="flex items-center gap-28 max-md:flex-col-reverse max-md:gap-10"
+								className="flex items-start max-md:items-center gap-28 max-md:flex-col-reverse max-md:gap-10"
 							>
 								<Box className="flex-1 space-y-6">
 									<Image
@@ -87,7 +87,7 @@ function Producto() {
 						{params.query.url == producto.url && (
 							<Box
 								key={producto.id}
-								className="flex items-center gap-28 max-md:flex-col-reverse max-md:gap-10"
+								className="flex items-start max-md:items-center gap-28 max-md:flex-col-reverse max-md:gap-10"
 							>
 								<Box className="flex-1 space-y-10">
 									<Image
